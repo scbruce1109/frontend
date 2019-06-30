@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('ducks1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.bg {
+  height: 100%;
+  width: 100%;
+
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+
+
+
+
+}
+
+.column {
+  max-width: 50%;
+  margin: auto;
+  height: 100%;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.thing1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  display: block;
+  /* margin: auto; */
+  margin: 10px;
+
+}

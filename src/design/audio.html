@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+
+  </style>
+
+<script>
+  var audio, playbtn, mutebtn;
+  function initAudioPlayer() {
+    audio = new Audio();
+    audio.src = "audio/24beat5_unmixed.wav";
+    audio.loop = true;
+    audio.play();
+    // Set object references
+    playbtn = document.getElementById("playpausebtn");
+    mutebtn = document.getElementById('mutebtn');
+    // Add Event Handling
+    playbtn.addEventListener("click", playPause);
+    mutebtn.addEventListener("click", mute);
+    // Functions
+    function playPause() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+    function mute() {
+      if (audio.muted) {
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+    }
+
+  }
+
+
+  window.addEventListener("load", initAudioPlayer);
+
+
+</script>
+</head>
+<body>
+<button id="playpausebtn"></button>
+<input id='seekslider' type="range" min="0" max="100" value="0" step="1">
+<button id="mutebtn"></button>
+<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+
+
+</body>
+</html>

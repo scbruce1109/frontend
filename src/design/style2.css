@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: url('ducks1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
